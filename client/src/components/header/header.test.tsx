@@ -4,7 +4,7 @@ import { render } from "@testing-library/react";
 
 describe("header", () => {
   it("renders", () => {
-    const { getByText } = render(<Header />);
+    const { getByText } = render(<Header onInsightCreated={() => undefined} />);
     expect(getByText(HEADER_TEXT)).toBeTruthy();
   });
 });
